@@ -1,10 +1,10 @@
 import React from 'react'
 import NoSecretUI from './ui/NoSecretUI';
 import SecretUI from './ui/SecretUI';
-let secret = null
+let game = null
 const UI = _ => 
         <div  className = 'container'>
-           { secret == null ? 
+           { game == null ? 
             <NoSecretUI/> : <SecretUI/>
             } 
         </div>

@@ -1,10 +1,11 @@
 import React from 'react'
 import Inctruction from '../components/Instruction'
-let secret = null
+import StepList from '../components/StepList'
+let isSecretSubmitted = true
 
 const Display = _ => 
         <div className = 'container display'>
-            { secret == null ? <Inctruction/> : 'Display' }
+            { isSecretSubmitted == null ? <Inctruction/> : <StepList/> }
         </div>
 
 export default Display

@@ -12,3 +12,214 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.App {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #E5E5E5;
+  min-height: 100%;
+  padding: 50px ;
+  font-family: 'Roboto';
+  font-size: 34px;
+
+}
+
+.container {
+  width: 361px;
+
+}
+
+.name {
+  font-size: 40px;
+  color: #4F4F4F;
+
+}
+.grntext{
+  color : #219653
+}
+.instraction {
+  width: 155px;
+  text-align: left;
+}
+.title {
+  color: #333;
+  font-size: 28px;
+  margin: 3px 0 5px;
+}
+.text{
+  font-size: 25px;
+  color: #4F4F4F;
+
+}
+
+.ui , .display {
+  margin:  22px 0 ;
+}
+.display{
+  min-height: 600px;
+  display: flex;
+  align-items: flex-end;
+}
+.ui {
+  display : flex;
+}
+
+.left {
+ flex:1
+}
+
+.right {
+  
+}
+
+
+.grn {
+background: #219653;
+
+}
+.button {
+box-shadow: 0px 8px 6px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+border: none;
+height:50px;
+width: 53px;
+margin-left: 10px;
+-webkit-touch-callout: none; /* iOS Safari */
+-webkit-user-select: none; /* Safari */
+ -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none;
+                          
+}
+.button:active {
+  opacity: 0.9;
+  border: none;
+}
+.button:focus{
+  outline: none;
+}
+.button:hover {
+  filter: brightness(0.9);
+  cursor: pointer;
+}
+.white-text{
+  color: white;
+}
+
+.white{
+  background: white
+}
+.black {
+  background: black;
+}
+.empty{
+ border: white 2px solid;
+  width: 10px;
+  height: 10px;
+}
+.blue{
+  background: #2D9CDB;
+}
+.square{
+  border-radius: 10px;
+  border: none;
+  height:40px;
+  width: 43px;
+  padding: 5px;
+  margin-left: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr
+}
+.circle{
+  position: relative;
+  width:12px;
+  margin:auto;
+  height: 12px;
+  border-radius: 100%;
+}
+.empty-circle{
+  position: relative;
+  width:10px;
+  margin:auto;
+  height: 10px;
+  border-radius: 100%;
+  border: black solid 1px;
+}
+
+.rect{
+  height:50px;
+   display:flex;
+  flex:1;
+
+}
+.numberWrapper {
+    flex:1
+}
+.input {
+  background: #D0D0D0;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  margin: 0 10px;
+}
+.step-list {
+  min-width: 100%;
+}
+.step {
+  display: flex;
+  position: relative;
+  margin: 4px 0
+}
+.guess {
+  flex:1;
+  background: #fff;
+  border: 2px solid #F2F2F2;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  padding: 5px 5;
+  margin: 0 10px;
+}
+
+.step-number{
+  font-family:'Reem Kufi';
+  font-size: 20px;
+  position: absolute;
+  transform: translate(-10px,10px)
+}
+
+.number{
+  flex:1;
+text-align: center;
+font-size: 34px;
+font-family: 'Roboto'
+}
+
+.key{
+  margin:10px;
+  background: #EDEDED;
+  border-radius: 16px;
+}
+
+.red {
+  background : #EB5757;
+}
+
+.keys{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin : 15px 0;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+

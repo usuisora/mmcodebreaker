@@ -1,16 +1,18 @@
 import React from 'react'
 import Input from '../../components/Input'
-import Icon from '../../components/Icon'
 import Left from './Left'
 import Right from './Right'
+import Keys from '../Keys'
+import SubmitButton from '../../components/SubmitButton'
 const NoSecretUI = () => {
     return (
          <div className='ui'>
                         <Left>
                                 <Input/>
+                                <Keys/>
                         </Left>
                         <Right>
-                                <button className='grn button'><Icon name ='done'></Icon></button>
+                               <SubmitButton/>
                         </Right>
 
                 </div>
