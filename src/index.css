@@ -27,7 +27,9 @@ code {
 
 .container {
   width: 361px;
-
+}
+.flex-con{
+  display:flex;
 }
 
 .name {
@@ -70,7 +72,8 @@ code {
 }
 
 .right {
-  
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -107,6 +110,11 @@ margin-left: 10px;
 .white-text{
   color: white;
 }
+
+.right .button {
+  margin-bottom : 15px
+}
+
 
 .white{
   background: white
@@ -158,12 +166,16 @@ margin-left: 10px;
     flex:1
 }
 .input {
-  background: #D0D0D0;
   border-radius: 20px;
   display: flex;
   align-items: center;
   padding: 5px 0;
   margin: 0 10px;
+}
+
+.light-grey{
+  background: #D0D0D0;
+
 }
 .step-list {
   min-width: 100%;
@@ -183,6 +195,8 @@ margin-left: 10px;
   padding: 5px 5;
   margin: 0 10px;
 }
+
+
 
 .step-number{
   font-family:'Reem Kufi';
@@ -213,6 +227,23 @@ font-family: 'Roboto'
   flex-wrap: wrap;
   justify-content: center;
   margin : 15px 0;
+}
+
+.result{
+  flex:1;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin: 10px 11px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.lose{
+  background: #F2F2F2;
+  color: #EB5757
 }
 @keyframes App-logo-spin {
   from {

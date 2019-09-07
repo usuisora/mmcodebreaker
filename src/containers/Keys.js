@@ -1,6 +1,6 @@
 import React from 'react'
-import Key from '../components/Key'
-import DeleteButton from '../components/DeleteButton'
+import Key from '../components/buttons/Key'
+import DeleteButton from '../components/buttons/DeleteButton'
 let keys  = [1,2,3,4,5,6]
 
 const Keys = () => {

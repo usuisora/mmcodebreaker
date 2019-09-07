@@ -2,7 +2,7 @@
 
 
 import React from 'react'
-import Icon from './Icon';
+import Icon from '../Icon';
 
 let secret = ['1','1']
 const DeleteButton = () => {

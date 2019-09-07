@@ -2,7 +2,7 @@ import React from 'react'
 
 const Right = ({children})=> {
     return (
-        <div className= 'rigth'>
+        <div className= 'right'>
           {children}
         </div>
     )
