@@ -1,14 +1,11 @@
-
-
-
-import React from 'react'
+import React,{useContext} from 'react'
 import Icon from '../Icon';
+import {SecretContext} from '../../context/SecretContext'
 
-let secret = ['1','1']
 const DeleteButton = () => {
-    const handleClick = () => secret.pop();
+    const {popFromSecret} = useContext(SecretContext)
     return (
-        <button className="red button key" onClick ={handleClick}>
+        <button className="red button key" onClick ={popFromSecret}>
             <Icon name = 'backspace' className='white-text'/>
         </button>
     )

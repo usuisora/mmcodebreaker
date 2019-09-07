@@ -7,7 +7,7 @@ const Result = ({isVisible}) => {
         return null
     else
     return (
-        <div class = 'flex-con '>
+        <div className = 'flex-con '>
             <div className = { classes }>{ isWin ? 'win' : 'lose' }</div>
             <div className = "square" ></div>
         </div>

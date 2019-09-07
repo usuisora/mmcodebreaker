@@ -13,8 +13,20 @@ export const SecretProvider = (props) => {
         }
         return secret
       }
+    const pushToSecret = val => {
+        if(secret.length < 4) {
+                setSecret([...secret,val])
+
+        }
+    }
+    const popFromSecret = val => {
+        if(secret.length > 0){
+            
+            setSecret(secret.slice(0,secret.length-1))
+        }
+    }
     return (
-        <SecretContext.Provider value= {{secret , getSecret}}>
+        <SecretContext.Provider value= {{secret , getSecret, pushToSecret, popFromSecret}}>
                 {props.children}
         </SecretContext.Provider>
     )

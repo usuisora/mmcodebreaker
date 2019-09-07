@@ -1,11 +1,8 @@
-import React from 'react'
+import React , {useContext} from 'react'
+import {SecretContext} from '../../context/SecretContext'
 
-const Key = ({val,pushToSecret}) => {
-    // let secret = []
-    // let handleClick = () =>{
-    //     if(secret.length<4)
-    //              secret.push(val)
-    // }
+const Key = ({val}) => {
+    const {pushToSecret} = useContext(SecretContext)
     return (
         <button className="button key" onClick={()=>pushToSecret(val)}>
                                               <div className="number">{val}</div>
