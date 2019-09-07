@@ -1,7 +1,7 @@
 import React from 'react'
 import NoSecretUI from './ui/NoSecretUI';
 import SecretUI from './ui/SecretUI';
-let game = true
+let game = null
 const UI = _ => 
         <div  className = 'container'>
            { game == null ? 

@@ -21,7 +21,7 @@ code {
   min-height: 100%;
   padding: 50px ;
   font-family: 'Roboto';
-  font-size: 34px;
+  font-size: 32px;
 
 }
 
@@ -171,6 +171,7 @@ margin-left: 10px;
   align-items: center;
   padding: 5px 0;
   margin: 0 10px;
+  min-height:34px;
 }
 
 .light-grey{

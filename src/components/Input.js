@@ -3,8 +3,8 @@
 import React from 'react'
 import Number from './Number'
 
-let secret = ['1','1','2','_',]
-const Input = ({disabled}) => {
+// let secret = ['1','1','2','']
+const Input = ({disabled,secret}) => {
 
     let classes = (disabled) ? 'input blue white-text' : 'input light-grey'
     return (
