@@ -3,14 +3,18 @@ import Display from './containers/Display'
 import UI from './containers/UI'
 import {SecretProvider} from './context/SecretContext'
 import {GameProvider} from './context/GameContext'
+import GuessProvider from './context/GuessContext';
 
 function App() {
   return (
     <div className="App">
       <GameProvider>
       <SecretProvider>
-          <Display/>
+        <GuessProvider>
+        <Display/>
             <UI/>
+        </GuessProvider>
+          
       </SecretProvider>
       </GameProvider>
      
