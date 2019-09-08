@@ -9,7 +9,7 @@ let S = combi4([1,2,3,4,5,6])
 const secret =[4,4,3,6]
 let guess ;
 
-function Reset(){
+function reset(){
      isWin = false;
       step = 0;
      backup= [];
@@ -29,37 +29,34 @@ function Reset(){
             S = [...backup];
             S = difference(S,guesses)
         }
-        guesses.push(guess.join(''));
+       
 
         let mark = getMark(guess,secret)
+        guesses.push({
+            guess: guess.join(''),
+            bulls: getBulls(mark),
+            cows: getCows(mark) 
+        });
         isWin = deleteCodesFromS(mark,guess)
         if(isWin){
-        console.log('res:',guesses)
-
             break;
         }
-        if(step == 1)
+        if(step == 1){
             backup =[...S]
+
+        }
         S = S.filter(el=>el != guess.join(''))
-         
-        console.log('isWin: ', isWin)
-        console.log('Guess =', guess);
-        console.log('secret = ',secret)
-        console.log('step:', step);
-        console.log('mark= ', mark);
-        console.log('len not used elements=',S.length)
-      
-        console.log('res:',guesses)
 
     }
+    console.log('res:',guesses)
 
-
+    return  guesses
+    
   }
 
 function deleteCodesFromS(mark,guess){
     step++;
     if (mark == 40  ){
-        console.log('u win : ', guess)
         return true
     }
     else if (mark == 0){
@@ -190,4 +187,7 @@ function permutator(inputArr){
      }
     
 
+     algorithm()
+     reset()
+     console.log('reset')
      algorithm()
