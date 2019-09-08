@@ -12,6 +12,8 @@ import { SecretContext } from './SecretContext';
 
 export const GuessContext = createContext();
 export const GuessProvider = (props) => {
+
+    
     const [isWin, setIsWin] = useState(false);
 
     const [step, setStep] = useState(0);
@@ -31,15 +33,15 @@ export const GuessProvider = (props) => {
 
     }
 
-    const deleteCodesFromS = async mark => {
-      await setStep(step+1)
+    const deleteCodesFromS =  mark => {
+       setStep(step+1)
         if (mark === 40  ){
             console.log('u win : ', guess)
             return true
         }
         else if (mark === 0){
-            getUnique(guess).forEach( async i => {
-              await setS(S.filter(el=> !el.includes(i.toString())))
+            getUnique(guess).forEach(  i => {
+               setS(S.filter(el=> !el.includes(i.toString())))
             })
         }
        
@@ -47,6 +49,7 @@ export const GuessProvider = (props) => {
                 let poss  = permutator([0,1,2,3]) 
                 let newS = [];
                 let bulls = getBulls(mark);
+                
                 let cows =  getCows(mark);
                 poss.forEach(pos=>{
                     let regex = []
@@ -81,7 +84,7 @@ export const GuessProvider = (props) => {
                     cows =  getCows(mark);
                 })
             
-              await setS([...getUnique(newS)])
+               setS([...getUnique(newS)])
             
         }
         return false
@@ -98,43 +101,42 @@ export const GuessProvider = (props) => {
                 cows:  getCows(mark)
             }])
     }
-    const alg= () =>{
-        setStep(step+1)
-    }
-    const  algorithm = async _ => {
+   
+    const  algorithm = () => {
         // resetGame()
         for(let i = 0; i<10; i++){
             try{
                 if(step === 0){
-                    await setGuess([1,1,2,2])
+                     setGuess([1,1,2,2])
                 }
                 if(step === 1){
-                    await setGuess( [3,3,4,4])
+                     setGuess( [3,3,4,4])
                 }
                 else{
-                    await setGuess( S[getRndInteger(0, S.length-1)].split(''))
+                     setGuess( S[getRndInteger(0, S.length-1)].split(''))
                 }
                 console.log(guess)
             // setGuess((step === 0) ?  [1,1,2,2] : (step === 1) ?  [3,3,4,4] : S[getRndInteger(0, S.length-1)].split(''));
             }
             catch(err){
-                await  setS([...backup]);
-                await  setS(difference(S,guesses.map(obj => obj.guess)))
+                  setS([...backup]);
+                  setS(difference(S,guesses.map(obj => obj.guess)))
                 console.log(err)
             }
 
-            let mark =  await getMark(guess,secret);
+            let mark =   getMark(guess,secret);
 
-            await deleteCodesFromS(mark)
-
+             deleteCodesFromS(mark)
+             let newstep = step +1
+                setStep(newstep);
             if(isWin){
                 return true;
             } 
 
-            await pushToGuesses(mark);
+             pushToGuesses(mark);
 
             if(step == 1){
-               await setBackup([...S])
+                setBackup([...S])
             }
 
             setS(S.filter(el=>el != guess.join('')))
