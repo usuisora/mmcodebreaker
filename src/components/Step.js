@@ -5,8 +5,8 @@ import Guess from './Guess'
 const Step = ({guess, index}) =>  <div className="step">
                                         <div className="step-number"> {index}
                                         </div>
-                                        <Guess guess = {guess}/>
-                                        <Check/>
+                                        <Guess guess = {guess.value}/>
+                                        <Check guess = {guess}/>
                                 </div>
 
 export default Step

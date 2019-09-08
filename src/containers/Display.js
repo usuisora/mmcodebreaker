@@ -1,11 +1,12 @@
-import React from 'react'
+import React , {useContext}from 'react'
 import Instruction from '../components/Instruction'
 import StepList from '../components/StepList'
-let isSecretSubmitted = true
+import { GameContext } from '../context/GameContext'
 
-const Display = _ => 
-        <div className = 'container display'>
-            { isSecretSubmitted == null ? <Instruction/> : <StepList/> }
-        </div>
+const Display = _ => {
+const {game} = useContext(GameContext)
+      return  <div className = 'container display'>
+            { game === false ? <Instruction/> : <StepList/> }
+        </div>}
 
 export default Display
