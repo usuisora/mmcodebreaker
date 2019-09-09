@@ -6,7 +6,7 @@ import { GameContext } from '../context/GameContext'
 const UI = _ => {
         const {game} = useContext(GameContext)
         return <div  className = 'container'>
-           { game == false ? 
+           { game === false ? 
             <NoSecretUI/> : <SecretUI/>
             } 
         </div>

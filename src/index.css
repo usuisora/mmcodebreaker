@@ -5,7 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  min-height: 100%;
+  min-height: 100hv;
+  background-color: #E5E5E5;
+
+  overflow: hidden;
 }
 
 code {
@@ -19,21 +22,20 @@ code {
   align-items: center;
   background-color: #E5E5E5;
   min-height: 100%;
-  padding: 50px ;
   font-family: 'Roboto';
-  font-size: 32px;
+  font-size: 24px;
 
 }
 
 .container {
-  width: 361px;
+  width: 322px;
 }
 .flex-con{
   display:flex;
 }
 
 .name {
-  font-size: 40px;
+  font-size: 33px;
   color: #4F4F4F;
 
 }
@@ -46,11 +48,11 @@ code {
 }
 .title {
   color: #333;
-  font-size: 28px;
+  font-size: 21px;
   margin: 3px 0 5px;
 }
 .text{
-  font-size: 25px;
+  font-size:  18px;
   color: #4F4F4F;
 
 }
@@ -59,7 +61,7 @@ code {
   margin:  22px 0 ;
 }
 .display{
-  min-height: 600px;
+  min-height: 470px;
   display: flex;
   align-items: flex-end;
 }
@@ -85,8 +87,8 @@ background: #219653;
 box-shadow: 0px 8px 6px rgba(0, 0, 0, 0.25);
 border-radius: 10px;
 border: none;
-height:50px;
-width: 53px;
+height:40px;
+width: 43px;
 margin-left: 10px;
 -webkit-touch-callout: none; /* iOS Safari */
 -webkit-user-select: none; /* Safari */
@@ -133,8 +135,8 @@ margin-left: 10px;
 .square{
   border-radius: 10px;
   border: none;
-  height:40px;
-  width: 43px;
+  height:30px;
+  width: 33px;
   padding: 5px;
   margin-left: 10px;
   display: grid;
@@ -144,8 +146,8 @@ margin-left: 10px;
   display: flex;
 
   margin:auto;
-  width:12px;
-  height: 12px;
+  width:10px;
+  height:10px;
   border-radius: 100%;
   margin:auto;
 
@@ -153,8 +155,8 @@ margin-left: 10px;
 .empty-circle{
   display: flex;
   margin:auto;
-  width:10px;
-  height: 10px;
+  width:8px;
+  height: 8px;
   border-radius: 100%;
   border: black solid 1px;
   margin:auto;
@@ -176,7 +178,7 @@ margin-left: 10px;
   align-items: center;
   padding: 5px 0;
   margin: 0 10px;
-  min-height:42px;
+  min-height:32px;
 }
 
 .light-grey{
@@ -206,20 +208,20 @@ margin-left: 10px;
 
 .step-number{
   font-family:'Reem Kufi';
-  font-size: 20px;
+  font-size: 14px;
   position: absolute;
-  transform: translate(-10px,10px)
+  transform: translate(-10px,15px)
 }
 
 .number{
   flex:1;
 text-align: center;
-font-size: 34px;
+font-size: 24px;
 font-family: 'Roboto'
 }
 
 .key{
-  margin:10px;
+  margin: 5px 10px;
   background: #EDEDED;
   border-radius: 16px;
 }
@@ -232,7 +234,7 @@ font-family: 'Roboto'
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin : 15px 0;
+  margin : 10px 0;
 }
 
 .result{
@@ -242,8 +244,8 @@ font-family: 'Roboto'
   border-radius: 15px;
   display: flex;
   align-items: center;
-  padding: 20px;
-  margin: 10px 11px;
+  padding: 10px;
+  margin: 5px 11px;
   text-align: center;
   text-transform: uppercase;
 }

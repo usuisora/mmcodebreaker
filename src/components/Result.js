@@ -1,8 +1,7 @@
 import React from 'react'
-let isWin =  false
 
 const Result = ({bulls}) => {
-    let isWin = bulls == 4
+    let isWin = bulls === 4
     let classes = `left result ${isWin ?' grn white-text' : ' lose'}`;
   
     return (

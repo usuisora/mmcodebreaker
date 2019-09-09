@@ -1,0 +1,44 @@
+@media (max-width: 2560px) {
+   
+}
+
+@media (max-width: 1200px) {
+    
+}
+
+
+
+
+
+@media (max-width: 425px) {
+    
+}
+@media (max-width: 375px) {
+    
+}
+
+@media (max-width: 321px) {
+    .result{
+        padding:0px
+    }
+    .display{
+        min-height: 390px
+    }
+    .container {
+        width: 262px;
+    }
+    .key {
+        margin: 2px;
+        border-radius: 10px;
+        height: 35px;
+    }
+    i{
+        background-size: 10%;
+    }
+    .ui{
+        margin: 5px
+    }
+    .number{
+        font-size: 22px
+    }
+}
