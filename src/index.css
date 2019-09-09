@@ -141,19 +141,24 @@ margin-left: 10px;
   grid-template-columns: 1fr 1fr
 }
 .circle{
-  position: relative;
-  width:12px;
+  display: flex;
+
   margin:auto;
+  width:12px;
   height: 12px;
   border-radius: 100%;
+  margin:auto;
+
 }
 .empty-circle{
-  position: relative;
-  width:10px;
+  display: flex;
   margin:auto;
+  width:10px;
   height: 10px;
   border-radius: 100%;
   border: black solid 1px;
+  margin:auto;
+
 }
 
 .rect{

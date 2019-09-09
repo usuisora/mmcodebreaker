@@ -5,7 +5,7 @@ export const GuessContext = createContext();
 export const GuessProvider = (props) => {
 
     
-    const [guesses, setGuesses] = useState([]);
+    const [guesses, setGuesses] = useState(undefined);
     
 
     return (

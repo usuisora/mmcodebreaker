@@ -13,8 +13,8 @@ const StepList = ({secret,guesses, setGuesses}) => {
     console.log(guesses)
 return guesses === undefined ? <>proccessing...</> :
         <div className = 'step-list'>
-            {/* <Result isVisible = {true} guesses = {guesses}/> */}
-             {guesses.reverse().map((guess, index) =>{
+            <Result bulls = {guesses.reverse()[0].bulls}/>
+             {guesses.map((guess, index) =>{
                      setTimeout(console.log('121323'),1000)
                    return   <Step guess={guess} key = {index} index = {guesses.length - index}/>
                    })
