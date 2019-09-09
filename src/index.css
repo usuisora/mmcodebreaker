@@ -61,7 +61,7 @@ code {
   margin:  22px 0 ;
 }
 .display{
-  min-height: 470px;
+  min-height: 510px;
   display: flex;
   align-items: flex-end;
 }
