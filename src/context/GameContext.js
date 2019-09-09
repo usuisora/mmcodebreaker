@@ -1,13 +1,14 @@
-import React,{ createContext, useState, useEffect, useContext} from 'react'
-const {algorithm} = require('../lib/alg')
+import React,{ createContext, useState, } from 'react'
 
 
 export const GameContext = createContext();
 
 export const GameProvider = (props) => {
     const [game, setGame] = useState(false);
-    const initGame =_=> setGame(true)
-    const stopGame =_=> setGame(false)
+
+
+    const initGame =()=> setGame(true)
+    const stopGame =()=> {setGame(false)}
     const [secret, setSecret] = useState([]);
     
   

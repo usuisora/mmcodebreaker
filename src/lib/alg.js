@@ -71,7 +71,6 @@ function reset(){
     console.log('res:',guesses)
 
     return  guesses
-    reset()
 
   }
 
@@ -135,8 +134,10 @@ function deleteCodesFromS(mark,guess){
 }
 
 
+// eslint-disable-next-line no-unused-vars
 function AlgError(){
     let success = 0;
+    // eslint-disable-next-line no-unused-vars
     let fail =0
 
     let secret = [7,1,2,6]

@@ -1,7 +1,8 @@
 import React from 'react'
 let isWin =  false
 
-const Result = ({isVisible}) => {
+const Result = ({isVisible, guesses}) => {
+    let isWin = guesses[guesses.length-1].bulls == 4;
     let classes = `left result ${isWin ?' grn white-text' : ' lose'}`;
     if(!isVisible)
         return null
