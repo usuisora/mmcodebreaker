@@ -5,7 +5,7 @@ import Guess from './Guess'
 const Step = ({guess, index}) =>  <div className="step">
                                         <div className="step-number"> {index}
                                         </div>
-                                        <Guess guess = {guess.value}/>
+                                        <Guess guess = {guess.guess}/>
                                         <Check guess = {guess}/>
                                 </div>
 

@@ -2,7 +2,6 @@
 
 
 function getMark(guess,secret){
-    console.log('gs: ', secret)
     let cows = 0
     let bullPlaces = [];
     let cowValues = []

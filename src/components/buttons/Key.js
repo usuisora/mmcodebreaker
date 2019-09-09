@@ -1,8 +1,8 @@
 import React , {useContext} from 'react'
-import {SecretContext} from '../../context/SecretContext'
+import {GameContext} from '../../context/GameContext'
 
 const Key = ({val}) => {
-    const {pushToSecret} = useContext(SecretContext)
+    const {pushToSecret} = useContext(GameContext)
     return (
         <button className="button key" onClick={()=>pushToSecret(val)}>
                                               <div className="number">{val}</div>

@@ -2,10 +2,10 @@
 
 import React ,{useContext} from 'react'
 import Number from './Number'
-import {SecretContext} from '../context/SecretContext'
-// let secret = ['1','1','2','']
+import {GameContext} from '../context/GameContext'
+// let Game = ['1','1','2','']
 const Input = ({disabled}) => {
-    const {getSecret} = useContext(SecretContext)
+    const {getSecret} = useContext(GameContext)
     let     classes = (disabled) ? 'input blue white-text' : 'input light-grey'
     return (
          <div className={classes}>

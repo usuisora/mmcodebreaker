@@ -1,9 +1,9 @@
 import React,{useContext} from 'react'
 import Icon from '../Icon';
-import {SecretContext} from '../../context/SecretContext'
+import {GameContext} from '../../context/GameContext'
 
 const DeleteButton = () => {
-    const {popFromSecret} = useContext(SecretContext)
+    const {popFromSecret} = useContext(GameContext)
     return (
         <button className="red button key" onClick ={popFromSecret}>
             <Icon name = 'backspace' className='white-text'/>
